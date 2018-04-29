@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondix3"
+    android:orientation="vertical"
+    tools:context="edu.tectii.restaurantes2.Evaluacion">
+
+    <ImageView
+        android:id="@+id/evaImgVw"
+        android:layout_width="match_parent"
+        android:layout_height="207dp"
+        app:srcCompat="@drawable/barrafina"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="32dp" />
+
+    <TextView
+        android:id="@+id/EvaNombreRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="176dp" />
+
+    <TextView
+        android:id="@+id/evaDescripcionRestaurante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="206dp" />
+
+    <TextView
+        android:id="@+id/EvaDireccionRestaurate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="36dp"
+        tools:layout_editor_absoluteY="237dp" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu opinion:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="318dp" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_gravity="center"
+        android:background="@android:color/darker_gray"
+        android:numStars="3"
+        android:stepSize="1"
+        tools:layout_editor_absoluteX="121dp"
+        tools:layout_editor_absoluteY="357dp" />
+
+    <Button
+        android:id="@+id/buttonGuardarOpinion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/holo_orange_light"
+        android:onClick="onClickGuardarOpinion"
+        android:text="Guardar " />
+
+</LinearLayout>
